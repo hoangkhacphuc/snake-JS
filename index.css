@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.form {
+    border: 1px solid red;
+    padding: 20px;
+    width: 30%;
+    margin: 20px;
+}
+
+.form > .item {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.form > .item > span {
+    width: 100%;
+    display: block;
+    margin: 20px 0 10px 0;
+    color: #444;
+}
+
+.form > .item > span > i {
+    color: red;
+    font-weight: 600;
+}
+
+.form > .item > label {
+    font-size: 18px;
+    color: #333;
+    padding-right: 10px;
+}
+
+.form > .item > select {
+    outline: 0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 3px 5px;
+    width: 100px;
+}
+
+.form > .item > button {
+    border: 1px solid paleturquoise;
+    background-color: paleturquoise;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 10px;
+    color: white;
+    outline: 0;
+}
+
+.form > .item > button:active {
+    background-color: rgb(207, 248, 207);
+}
+
+.form > .item > button:hover {
+    color: #ffae00;
+}
+
+.container {
+    position: relative;
+    margin: 20px;
+    width: 70%;
+}
+
+.container > table {
+    border: 2px solid green;
+    border-spacing: 0;
+}
+
+.container > table tr {
+    
+}
+
+.container > table tr > td {
+    height: 20px;
+    width: 20px;
+    border: 0.1px solid rgb(250, 250, 250);
+    color: white;
+}
+
+.snake {
+    text-align: center;
+    font-weight: 600;
+    background-color: orange;
+}
+
+.status-head-1 {
+    border-radius: 50% 50% 0 0;
+}
+
+.status-head-2 {
+    border-radius: 0 50% 50% 0;
+}
+
+.status-head-3 {
+    border-radius: 0 0 50% 50%;
+}
+
+.status-head-4 {
+    border-radius: 50% 0 0 50%;
+}
+
+.prey {
+    border-radius: 50%;
+    background-color: red;
+    animation: prey 0.5s infinite;
+}
+
+@keyframes prey {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: white;
+    }
+}
